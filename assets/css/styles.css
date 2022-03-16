@@ -1,0 +1,180 @@
+h4 {
+  margin-top: 10px;
+}
+
+h1, h3, h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h1, h3 {
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+blockquote {
+  margin: 0 0 10px;
+}
+
+button, html input[type=button]{
+  border: 0;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+h1, h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+blockquote {
+  line-height: 32px;
+}
+
+.button {
+  width: auto;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+blockquote, h3 {
+  font-size: 24px;
+}
+
+h3 {
+  line-height: 30px;
+}
+
+p {
+  margin-bottom: 32px;
+}
+
+a {
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.w-button {
+  padding: 9px 15px;
+  background-color: #3898ec;
+  color: #fff;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0
+}
+
+.button {
+  margin-top: 0;
+  margin-left: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #111;
+  transition: border .2s ease, background-color .2s ease, color .2s ease;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.button.primary {
+  background-color: #111;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .4)
+}
+
+.button.primary.text-white {
+  background-color: #fff;
+  color: #111
+}
+
+.button.secondary {
+  background-color: transparent;
+  text-decoration: none;
+  margin-top: 24px;
+}
+
+.button.secondary:hover {
+  background-color: hsla(0, 0%, 100%, .08);
+}
+
+.button.alt {
+  background-color: hsla(0, 0%, 100%, .08);
+  text-decoration: none;
+  margin-top: 24px;
+}
+
+.button_small {
+  border: 1.5px solid #fff;
+  background-color: transparent;
+  text-align: center;
+  color: #111
+}
+
+.button_small:hover {
+  background-color: #fff!important;
+  color: #111!important;
+}
+
+.button-3 {
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: #111;
+  transition: border .2s ease, background-color .2s ease, color .2s ease;
+  color: #fff;
+  font-weight: 500
+}
+
+.button-3.primary {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .4);
+  background-color: #fff;
+  color: #111;
+}
+
+.submit-button {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  line-height: 24px;
+  font-weight: 500
+}
+
+.heading {
+  font-size: 26px;
+  line-height: 32px
+}
+
+.link-5 {
+  display: block;
+  margin-top: 1px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color .2s ease;
+  font-size: 21px;
+  line-height: 29px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none
+}
+
+.link-5:hover {
+  background-color: hsla(0, 0%, 100%, .08)
+}
+
+.small {
+  font-size: 15px;
+}
