@@ -73,7 +73,9 @@ $project_tal_icons = array("fab fa-html5", "fab fa-css3", "fab fa-php", "fab fa-
             <div class="row">
                 <?php foreach (glob("assets/img/projects/eric_carle_homepage/" . '*' . ".png") as $file) { ?>
                     <div class="col-4 mb-4">
-                        <img src="<?= $file ?>" class="img-fluid rounded" data-featherlight="<?= $file ?>" alt="Screenshot of <?= $project_name ?>">
+                        <a href="<?= $file ?>" data-fancybox="screenshots">
+                        <img src="<?= $file ?>" class="img-fluid rounded" alt="Screenshot of <?= $project_name ?>">
+                        </a>
                     </div>
                 <?php } ?>
             </div>

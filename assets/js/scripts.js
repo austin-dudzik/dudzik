@@ -73,7 +73,7 @@ new Swiper('.swiper-container.reverse', {
     },
 });
 
-Fancybox.bind('[data-fancybox="certifications"]', {
+Fancybox.bind('[data-fancybox]', {
     dragToClose: false,
 
     Toolbar: false,

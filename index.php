@@ -315,73 +315,97 @@
             <div class="row">
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/shopflow.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/shopflow.png" alt="ShopFlow logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/hexagonal.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/hexagonal.png" alt="Hexagonal logo">
+                    </a>
                 </div>
 
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/outage.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/outage.png" alt="Outage logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/blossom.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/blossom.png" alt="Blossom logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/mtn-rd.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/mtn-rd.png"
                          alt="MTN RD logo">
+                    </a>
                 </div>
 
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/sourceview.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/sourceview.png"
                          alt="SourceView logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/domainkit.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/domainkit.png"
                          alt="DomainKit logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/crinkle.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/crinkle.png"
                          alt="Crinkle logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/campfire.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/campfire.png"
                          alt="Campfire logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/stackpin.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/stackpin.png"
                          alt="Stackpin logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/1mb.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/1mb.png"
                          alt="1MB logo">
+                    </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
+                    <a href="assets/img/logos/rocketfuel.png" data-fancybox="logos">
                     <img class="img-fluid rounded"
                          src="assets/img/logos/rocketfuel.png"
                          alt="RocketFuel logo">
+                    </a>
                 </div>
 
             </div>
