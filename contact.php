@@ -11,14 +11,12 @@
 
     <h1 class="text-center ni heading">Contact Austin</h1>
 
-
-    <div class="card -0 mt-5">
-        <div class="m-5 mt-3 pb-5">
+    <div class="card mt-5">
+        <div class="mx-5 mt-3 pb-5">
 
             <p class="text-white pt-5">I'd love to hear from you! Please complete the following
                 contact form or reach out at one of my alternate contacts with inquiries and
                 ideas. 👇</p>
-
 
             <form class="pt-4" action="https://formsubmit.co/fc50331ed6d2051741a66979e055804a"
                   method="post">
