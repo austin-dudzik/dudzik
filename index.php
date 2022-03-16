@@ -481,17 +481,17 @@
 
             <div class="col-md-6">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/eric_carle_homepage.png"
+                    <img src="assets/img/projects/covers/spark.png"
                          alt="Dune cover" class="img-fluid w-100 rounded-top">
                     <img width="75" height="75"
-                         src="assets/img/projects/icons/eric_carle_homepage.png" alt="DomainKit"
+                         src="assets/img/projects/icons/spark.png" alt="DomainKit"
                          class="icon ml-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
-                        <div class="title">Eric Carle Homepage</div>
-                        <div class="subtitle text-muted mb-2">Mock author homepage</div>
-                        <div class="badge text-white bg-dark mr-1">WordPress</div>
+                        <div class="title">Spark</div>
+                        <div class="subtitle text-muted mb-2">Task management platform</div>
+                        <div class="badge text-white bg-dark mr-1">Laravel</div>
                         <div class="badge text-white bg-dark mr-1">PHP</div>
-                        <div class="badge text-white bg-dark mr-1">CSS</div>
+                        <div class="badge text-white bg-dark mr-1">Bootstrap</div>
                         <div class="badge text-white">+5 more</div>
                     </div>
                 </a>
