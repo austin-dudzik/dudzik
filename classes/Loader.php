@@ -13,13 +13,11 @@ class Loader
     <meta content="null" name="description">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/rules.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap">
 </head>
     ';
@@ -61,7 +59,7 @@ class Loader
     <nav class="navigation navbar navbar-expand-lg">
 
     <a href="./" class="logo_area navbar-brand">
-        <img src="assets/img/logo-white.svg" alt="Austin Dudzik logo" class="logo mr-3">
+        <img src="assets/img/logo-white.svg" alt="Austin Dudzik logo" class="logo me-3">
         <span>Austin Dudzik</span>
     </a>
 
@@ -70,7 +68,7 @@ class Loader
     </button>
     <div class="collapse navbar-collapse" id="toggleMenu">
 
-        <div class="mr-auto"></div>
+        <div class="me-auto"></div>
 
         <div class="menu">
 
@@ -119,8 +117,7 @@ class Loader
         </div>
 
     </div>
-</nav>
-';
+</nav>';
     }
 
     public static function getFooter(): string
@@ -139,9 +136,9 @@ class Loader
 
             <div class="mt-4 mb-3">
                 <a href="https://linkedin.com/in/austin-dudzik" target="_blank" class="submit-button w-button">
-                    <i class="fab fa-linkedin mr-2"></i> Let\'s connect
+                    <i class="fab fa-linkedin me-2"></i> Let\'s connect
                 </a>
-                <a href="./about" class="thin-link">Learn more about Austin</a>
+                <a href="./about" class="thin-link mb-2">Learn more about Austin</a>
             </div>
         </div>
 
@@ -158,7 +155,7 @@ class Loader
 
                 <div class="text-center mt-4">
                     <a href="./contact" class="button-3 primary w-button">
-                        Get in touch  <i class="far fa-long-arrow-right ml-2"></i>
+                        Get in touch  <i class="far fa-long-arrow-right ms-2"></i>
                     </a>
                 </div>
 
@@ -173,15 +170,15 @@ class Loader
                     <div class="my-auto">
                 <img src="assets/img/logo-white.svg" class="logo" width="50" alt="">
                     </div>
-                    <div class="ml-4">
+                    <div class="ms-4">
                 <div class="font-weight-bold">Austin Dudzik</div>
                 <p class="mb-0 small text-muted">Front-end Web Developer</p>
                     </div>
                 </div>
         </div>
             <div class="my-auto">
-                <i class="fab fa-github mr-3" style="font-size:20px"></i>
-                <i class="fab fa-linkedin mr-3" style="font-size:20px"></i>
+                <i class="fab fa-github me-3" style="font-size:20px"></i>
+                <i class="fab fa-linkedin me-3" style="font-size:20px"></i>
                 <i class="fab fa-dribbble" style="font-size:20px"></i>
             </div>
             </div>
@@ -243,10 +240,11 @@ class Loader
     {
         return '
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.m
+        in.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-visible@1.2.0/jquery.visible.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
         <script src="assets/js/scripts.js"></script>';
     }
 

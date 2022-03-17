@@ -17,7 +17,7 @@ require_once "classes/Loader.php"; ?>
         <div class="card-body p-4 m-2 large-block">
 
             <img src="assets/img/headshot.jpg"
-                 class="rounded float-right ml-4 mt-4 mr-2 mb-5" width="150"
+                 class="rounded float-end ms-4 mt-4 me-2 mb-5" width="150"
                  alt="Austin Dudzik headshot">
 
             <h3>About Me</h3>
@@ -59,7 +59,7 @@ require_once "classes/Loader.php"; ?>
     </div>
 
 
-    <p class="small mt-4 mb-3"><i class="fas fa-code mr-2"></i> Languages & Tools</p>
+    <p class="small mt-4 mb-3"><i class="fas fa-code me-2"></i> Languages & Tools</p>
 
     <div class="d-flex flex-wrap align-items-stretch" style="column-gap:15px">
         <?php $languages = [["Vue", "vue"], ["JavaScript", "javascript"], ["WordPress", "wordpress"], ["HTML", "html"], ["Firebase", "firebase"], ["Photoshop", "photoshop"], ["Illustrator", "illustrator"], ["Git", "git"], ["C#", "c-sharp"], ["Bootstrap", "bootstrap"], ["CSS", "css"], ["PHP", "php"]
@@ -68,7 +68,7 @@ require_once "classes/Loader.php"; ?>
             <div class="mb-4 flex-grow-1">
                 <div class="card text-center p-0 px-3">
                     <div class="card-body">
-                        <img src="assets/img/knowledge/<?= $languages[$i][1] ?>.png" class="mr-2"
+                        <img src="assets/img/knowledge/<?= $languages[$i][1] ?>.png" class="me-2"
                              alt="" width="20"> <?= $languages[$i][0] ?>
                     </div>
                 </div>
@@ -76,13 +76,13 @@ require_once "classes/Loader.php"; ?>
         <?php } ?>
     </div>
 
-    <div class="text-right">
-        <a href="#" class="button-3 bg-transparent w-button mr-0 pr-0">
-            View all skills <i class="far fa-long-arrow-right ml-2"></i>
+    <div class="text-end">
+        <a href="#" class="button-3 bg-transparent w-button me-0 pe-0">
+            View all skills <i class="far fa-long-arrow-right me-2"></i>
         </a>
     </div>
 
-    <p class="small my-3"><i class="fas fa-graduation-cap mr-2"></i> Education</p>
+    <p class="small my-3"><i class="fas fa-graduation-cap me-2"></i> Education</p>
 
     <div class="bg-gradient p-1 rounded">
         <div class="card rounded">
@@ -123,7 +123,7 @@ require_once "classes/Loader.php"; ?>
         </div>
     </div>
 
-    <p class="small mt-5 mb-4"><i class="fas fa-certificate mr-2"></i> Certifications</p>
+    <p class="small mt-5 mb-4"><i class="fas fa-certificate me-2"></i> Certifications</p>
 
     <div class="row">
         <div class="col-3 text-center mb-4">

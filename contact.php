@@ -42,7 +42,7 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="http://localhost/orig/dudzik.dev/thanks">
 
-                <button type="submit" class="btn btn-gradient btn-block ni py-2 button-3">
+                <button type="submit" class="btn btn-gradient w-100 ni py-2 button-3">
                     <i class="fas fa-paper-plane mr-2"></i> Send message
                 </button>
             </form>
@@ -53,21 +53,20 @@
             <div class="row mt-3">
                 <div class="col">
                     <a href="tel:4143785182" target="_blank" class="text-white text-decoration-none">
-                    <i class="fas fa-phone mr-2"></i> (414) 378-5182</i>
+                    <i class="fas fa-phone me-2"></i> (414) 378-5182
                     </a>
                 </div>
                 <div class="col">
                     <a href="mailto:austin@dudzik.dev" target="_blank" class="text-white text-decoration-none">
-                    <i class="fas fa-envelope mr-2"></i> austin@dudzik.dev</i>
+                    <i class="fas fa-envelope me-2"></i> austin@dudzik.dev
                     </a>
                 </div>
                 <div class="col">
                     <a href="https://linkedin.com/in/austin-dudzik" target="_blank" class="text-white text-decoration-none">
-                    <i class="fab fa-linkedin mr-2"></i> austin-dudzik</i>
+                    <i class="fab fa-linkedin me-2"></i> austin-dudzik
                     </a>
                 </div>
             </div>
-
 
         </div>
     </div>

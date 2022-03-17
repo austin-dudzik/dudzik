@@ -14,12 +14,12 @@
         <div class="row mt-4">
             <div class="col">
                 <a href="assets/pdf/resume.pdf" download="Austin Dudzik Resume"
-                   class="btn btn-gradient py-2 btn-block ni"><i class="fas fa-download mr-2"></i>
+                   class="btn btn-gradient py-2 w-100 ni"><i class="fas fa-download me-2"></i>
                     Download</a>
             </div>
             <div class="col">
-                <a href="assets/pdf/resume.pdf" target="_blank" class="btn btn-dark py-2 btn-block"><i
-                            class="fas fa-arrow-up-right-from-square mr-2"></i> Open in new tab</a>
+                <a href="assets/pdf/resume.pdf" target="_blank" class="btn btn-dark py-2 w-100"><i
+                            class="fas fa-arrow-up-right-from-square me-2"></i> Open in new tab</a>
             </div>
             <div class="col-5"></div>
         </div>

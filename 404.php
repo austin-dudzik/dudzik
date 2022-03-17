@@ -7,15 +7,15 @@
 <?= Loader::getNavigation() ?>
 <div class="container">
 
-    <h1 class="heading heading-lg ni">404 Page<br> Not Found</h1>
+    <h1 class="heading heading-lg ni" style="letter-spacing: normal">404 Page<br> Not Found</h1>
 
     <p class="text my-4">Apologies - the page you're looking for couldn't be found. It may have been
         moved, deleted, or may have never even existed.</p>
 
     <p class="text mb-4">Instead, how about checking out my homepage?</p>
 
-    <a href="./" class="btn-custom rounded-ex mt-1">
-        Continue to homepage <i class="far fa-long-arrow-right ml-2"></i>
+    <a href="./" class="btn-custom rounded-ex mt-1 text-black">
+        Continue to homepage <i class="far fa-long-arrow-right me-2"></i>
     </a>
 
 </div>

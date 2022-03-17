@@ -10,8 +10,7 @@
 <div class="container">
 
     <h1 class="text-center ni"
-        style="font-weight: 900; font-size: 120px; line-height: 125px; letter-spacing: 6px;background: linear-gradient( 288deg ,#b13cff,#dd45d3 50%,#fd9d52); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-        class="text">Stats
+        style="font-weight: 900; font-size: 120px; line-height: 125px; letter-spacing: 6px;background: linear-gradient( 288deg ,#b13cff,#dd45d3 50%,#fd9d52); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Stats
 
     </h1>
 
@@ -62,7 +61,7 @@
                 <div class="m-5 mt-3 pt-5">
                     <div class="d-flex">
                         <div>
-                            <i class="fas fa-rectangle-terminal fa-3x mb-3 mr-4 text-white mt-4"></i>
+                            <i class="fas fa-rectangle-terminal fa-3x mb-3 me-4 text-white mt-4"></i>
                         </div>
                         <div>
                             <h3 style="font-size:40px">Web Developer Intern</h3>

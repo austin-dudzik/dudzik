@@ -36,7 +36,7 @@ $project_tal_icons = array("fab fa-html5", "fab fa-css3", "fab fa-php", "fab fa-
     <div class="card p-0 mt-4">
         <img src="assets/img/projects/<?= $project_slug ?>/01.png" class="img-fluid w-100 rounded-top" alt="Cover of <?= $project_name ?>">
         <img width="100" height="100" src="assets/img/projects/icons/<?= $project_slug ?>.png"
-             style="margin-top: -40px" alt="DomainKit" class="image-8 ml-5">
+             style="margin-top: -40px" alt="DomainKit" class="image-8 ms-5">
         <div class="m-5 mt-3 pb-5">
             <div class="d-flex justify-content-between">
             <div>
@@ -46,7 +46,7 @@ $project_tal_icons = array("fab fa-html5", "fab fa-css3", "fab fa-php", "fab fa-
 
                 <div>
             <a href="<?= $project_url ?>" target="_blank" class="button alt">Visit project
-                <i class="fas fa-arrow-up-right-from-square ml-2"></i></a>
+                <i class="fas fa-arrow-up-right-from-square ms-2"></i></a>
                 </div>
 
             </div>
@@ -61,7 +61,7 @@ $project_tal_icons = array("fab fa-html5", "fab fa-css3", "fab fa-php", "fab fa-
                 <div class="row">
                         <?php for($i = 0; $i < count($project_tal_names); $i++) {
                             echo '<div class="col-md-4 mb-2">
-                            <i class="' . $project_tal_icons[$i] . ' mr-2"></i>
+                            <i class="' . $project_tal_icons[$i] . ' me-2"></i>
                             <span>' . $project_tal_names[$i] . '</span>
                             </div>';
                         } ?>
