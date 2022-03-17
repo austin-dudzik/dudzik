@@ -133,8 +133,8 @@ class Loader
             <img src="assets/img/headshot.jpg" alt="Headshot of Austin Dudzik">
             <div class="fw-500 mt-4" style="font-size:18px">Austin Dudzik</div>
             <div class="fw-500 text-muted">Front-end Web Developer</div>
-            <p>I strive to create strong web and design experiences focused on consistency and
-                user experience that remain responsive and capture a project\'s true
+                <p class="px-5">I strive to create positive user experiences focused on consistency and
+                usability that remain responsive and capture true
                 potential.</p>
 
             <div class="mt-4 mb-3">
