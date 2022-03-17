@@ -43,7 +43,7 @@
                 <input type="hidden" name="_next" value="http://localhost/orig/dudzik.dev/thanks">
 
                 <button type="submit" class="btn btn-gradient w-100 ni py-2 button-3">
-                    <i class="fas fa-paper-plane mr-2"></i> Send message
+                    <i class="fas fa-paper-plane me-2"></i> Send message
                 </button>
             </form>
 

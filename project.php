@@ -24,7 +24,7 @@ $project_tal_icons = array("fab fa-html5", "fab fa-css3", "fab fa-php", "fab fa-
     <div class="d-flex justify-content-between">
     <div>
         <a href="projects" class="text-white text-decoration-none mb-4">
-            <i class="far fa-long-arrow-left mr-2"></i> Back to all projects
+            <i class="far fa-long-arrow-left me-2"></i> Back to all projects
         </a>
     </div>
     <div>
