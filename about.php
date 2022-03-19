@@ -59,7 +59,7 @@ require_once "classes/Loader.php"; ?>
     </div>
 
 
-    <p class="small mt-4 mb-3"><i class="fas fa-code me-2"></i> Languages & Tools</p>
+    <p class="small mt-5 mb-3"><i class="fas fa-code me-2"></i> Languages & Tools</p>
 
     <div class="d-flex flex-wrap align-items-stretch" style="column-gap:15px">
         <?php $languages = [["Vue", "vue"], ["JavaScript", "javascript"], ["WordPress", "wordpress"], ["HTML", "html"], ["Firebase", "firebase"], ["Photoshop", "photoshop"], ["Illustrator", "illustrator"], ["Git", "git"], ["C#", "c-sharp"], ["Bootstrap", "bootstrap"], ["CSS", "css"], ["PHP", "php"]
@@ -82,7 +82,7 @@ require_once "classes/Loader.php"; ?>
         </a>
     </div>
 
-    <p class="small my-3"><i class="fas fa-graduation-cap me-2"></i> Education</p>
+    <p class="small my-3 mt-5"><i class="fas fa-graduation-cap me-2"></i> Education</p>
 
     <div class="bg-gradient p-1 rounded">
         <div class="card rounded">
@@ -126,54 +126,232 @@ require_once "classes/Loader.php"; ?>
     <p class="small mt-5 mb-4"><i class="fas fa-certificate me-2"></i> Certifications</p>
 
     <div class="row">
-        <div class="col-3 text-center mb-4">
-            <a href="assets/img/certifications/word_2016_expert.png" data-fancybox="certifications">
-                <img src="assets/img/certifications/word_2016_expert.png"
-                     alt="Microsoft Word certification" class="img-fluid rounded">
-            </a>
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/sql.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/sql.png"
+                             alt="SQL certificate" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">SQL Certificate</h6>
+                    <p class="text-muted mb-0">March 2022</p>
+                </div>
+            </div>
         </div>
-        <div class="col-3 text-center mb-4">
-            <a href="assets/img/certifications/outlook_2016.png" data-fancybox="certifications">
-                <img src="assets/img/certifications/outlook_2016.png"
-                     alt="Microsoft Word certification" class="img-fluid rounded">
-            </a>
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/web_development.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/web_development.png"
+                             alt="Web Development Fundamentals certificate" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">Web Fundamentals Certificate</h6>
+                    <p class="text-muted mb-0">March 2022</p>
+                </div>
+            </div>
         </div>
-        <div class="col-3 text-center mb-4">
-            <a href="assets/img/certifications/word_2016.png" data-fancybox="certifications">
-                <img src="assets/img/certifications/word_2016.png"
-                     alt="Microsoft Word certification" class="img-fluid rounded">
-            </a>
+        <hr>
+
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/react.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/react.png"
+                             alt="React + Redux certificate" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">React + Redux Certificate</h6>
+                    <p class="text-muted mb-0">March 2022</p>
+                </div>
+            </div>
         </div>
-        <div class="col-3 text-center mb-4">
-            <a href="assets/img/certifications/excel_2016.png" data-fancybox="certifications">
-                <img src="assets/img/certifications/excel_2016.png"
-                     alt="Microsoft Word certification" class="img-fluid rounded">
-            </a>
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/javascript.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/javascript.png"
+                             alt="JavaScript certificate" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">JavaScript Certificate</h6>
+                    <p class="text-muted mb-0">March 2021</p>
+                </div>
+            </div>
         </div>
-        <div class="col-3 text-center mb-4">
-            <a href="assets/img/certifications/powerpoint_2016.png" data-fancybox="certifications">
-                <img src="assets/img/certifications/powerpoint_2016.png"
-                     alt="Microsoft Word certification" class="img-fluid rounded">
-            </a>
+        <hr>
+
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/php.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/php.png"
+                             alt="PHP certificate" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">PHP Certificate</h6>
+                    <p class="text-muted mb-0">January 2021</p>
+                </div>
+            </div>
         </div>
-        <div class="col-3 text-center mb-4">
-            <a href="assets/img/certifications/excel_2013.png" data-fancybox="certifications">
-                <img src="assets/img/certifications/excel_2013.png"
-                     alt="Microsoft Word certification" class="img-fluid rounded">
-            </a>
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/css.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/css.png"
+                             alt="CSS certificate" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">CSS Certificate</h6>
+                    <p class="text-muted mb-0">January 2021</p>
+                </div>
+            </div>
         </div>
-        <div class="col-3 text-center mb-3">
-            <a href="assets/img/certifications/powerpoint_2013.png" data-fancybox="certifications">
-                <img src="assets/img/certifications/powerpoint_2013.png"
-                     alt="Microsoft Word certification" class="img-fluid rounded">
-            </a>
+        <hr>
+
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/html.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/html.png"
+                             alt="HTML certificate" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">HTML Certificate</h6>
+                    <p class="text-muted mb-0">January 2021</p>
+                </div>
+            </div>
         </div>
-        <div class="col-3 text-center mb-3">
-            <a href="assets/img/certifications/word_2016.png" data-fancybox="certifications">
-                <img src="assets/img/certifications/word_2016.png"
-                     alt="Microsoft Word certification" class="img-fluid rounded">
-            </a>
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/word_2016_expert.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/word_2016_expert.png"
+                             alt="Office Word 2016 Expert certification" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">Word 2016 Expert Certification</h6>
+                    <p class="text-muted mb-0">June 2019</p>
+                </div>
+            </div>
         </div>
+        <hr>
+
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/outlook_2016.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/outlook_2016.png"
+                             alt="Office Outlook 2016 certification" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">Outlook 2016 Certification</h6>
+                    <p class="text-muted mb-0">June 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/word_2016.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/word_2016.png"
+                             alt="Office Word 2016 certification" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">Word 2016 Certification</h6>
+                    <p class="text-muted mb-0">May 2019</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/excel_2016.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/excel_2016.png"
+                             alt="Office Excel 2016 certification" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">Excel 2016 Certification</h6>
+                    <p class="text-muted mb-0">May 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/powerpoint_2016.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/powerpoint_2016.png"
+                             alt="Office PowerPoint 2016 certification" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">PowerPoint 2016 Certification</h6>
+                    <p class="text-muted mb-0">May 2019</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/excel_2013.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/excel_2013.png"
+                             alt="Office Excel 2013 certification" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">Excel 2013 Certification</h6>
+                    <p class="text-muted mb-0">June 2018</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="d-flex">
+                <div>
+                    <a href="assets/img/certifications/powerpoint_2013.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/powerpoint_2013.png"
+                             alt="Office PowerPOint 2013 certification" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">PowerPoint 2013 Certification</h6>
+                    <p class="text-muted mb-0">December 2016</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="col-md-6">
+            <div class="d-flex mb-3">
+                <div>
+                    <a href="assets/img/certifications/word_2013.png" data-fancybox="certifications">
+                        <img src="assets/img/certifications/word_2013.png"
+                             alt="Office Word 2013 certification" class="img-fluid rounded me-3" style="height:50px">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-1">Word 2013 Certification</h6>
+                    <p class="text-muted mb-0">October 2016</p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <script>
