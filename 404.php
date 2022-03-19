@@ -14,8 +14,8 @@
 
     <p class="text mb-4">Instead, how about checking out my homepage?</p>
 
-    <a href="./" class="btn-custom rounded-ex mt-1 text-black">
-        Continue to homepage <i class="far fa-long-arrow-right me-2"></i>
+    <a href="./" class="btn-custom rounded-ex text-black">
+        Continue to homepage <i class="far fa-long-arrow-right ms-2"></i>
     </a>
 
 </div>
