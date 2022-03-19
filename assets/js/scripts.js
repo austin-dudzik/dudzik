@@ -1,13 +1,12 @@
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+$(() => {
+    $('[data-toggle="tooltip"]').tooltip();
 })
 
 $("#menu_toggle").on("click", () => {
-    $(".navbar").toggleClass("colored");
     $(".navbar i").toggleClass("fa-bars fa-times");
 });
 
-$("#modeToggle").on("click", function () {
+$("#modeToggle").on("click", () => {
     if (document.cookie.indexOf('theme_mode') === -1) {
         document.cookie = 'theme_mode=1';
     } else {
@@ -26,11 +25,9 @@ function toggleMode() {
     $(".no-invert").toggleClass("bg-invert");
 
     $("img.logo").attr("src", $(".logo_area img").attr("src") === "assets/img/logo-white.svg" ? "assets/img/logo-dark.svg" : "assets/img/logo-white.svg");
-
 }
 
 $(window).on("load", () => {
-    $(".gradient-top").css("visibility", $('.top-section').visible(true) ? "hidden" : "visible");
     $("body").css("overflow", "visible");
     $(".loader").fadeOut();
 })
@@ -39,10 +36,6 @@ $(window).on("load", () => {
 //     $("body").css("overflow", "hidden");
 //     $(".loader").fadeIn();
 // });
-
-$(window).on("scroll", () => {
-    $(".gradient-top").css("visibility", $('.top-section').visible(true) ? "hidden" : "visible");
-})
 
 new Swiper('.swiper-container.forward', {
     loop: true,

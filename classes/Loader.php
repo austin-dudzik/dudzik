@@ -13,7 +13,6 @@ class Loader
     <meta content="null" name="description">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
@@ -32,7 +31,7 @@ class Loader
    <div class="text-center">
    <img src="assets/img/logo-white.svg" class="m-3 ni" alt="">
    <div class="loading">
-  <div class="loaderBar"></div>
+  <div class="bar"></div>
   </div>
 </div>
 </div>
@@ -56,14 +55,14 @@ class Loader
     public static function getNavigation(string $title = ""): string
     {
         return '
-    <nav class="navigation navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
 
-    <a href="./" class="logo_area navbar-brand">
-        <img src="assets/img/logo-white.svg" alt="Austin Dudzik logo" class="logo me-3">
+    <a href="./" class="navbar-brand">
+        <img src="assets/img/logo-white.svg" alt="Austin Dudzik logo" class="me-3">
         <span>Austin Dudzik</span>
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMenu">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="toggleMenu">
@@ -72,38 +71,32 @@ class Loader
 
         <div class="menu">
 
-            <div class="menu_item' . ($title === 'About' ? ' active' : '') . '">
-                <a href="./about">
+            <div class="menu_item">
+                <a href="./about" class="' . ($title === 'About' ? 'active' : '') . '">
                     <div class="text-block-12">About</div>
                 </a>
             </div>
 
-            <div class="menu_item' . ($title === 'Projects' ? ' active' : '') . '">
-                <a href="./projects">
+            <div class="menu_item">
+                <a href="./projects" class="' . ($title === 'Projects' ? 'active' : '') . '">
                     <div class="text-block-12">Projects</div>
                 </a>
             </div>
 
-            <div class="menu_item' . ($title === 'Experience' ? ' active' : '') . '">
-                <a href="./experience">
+            <div class="menu_item">
+                <a href="./experience" class="' . ($title === 'Experience' ? 'active' : '') . '">
                     <div class="text-block-12">Experience</div>
                 </a>
             </div>
 
-            <div class="menu_item' . ($title === 'Skills' ? ' active' : '') . '">
-                <a href="./skills">
+            <div class="menu_item">
+                <a href="./skills" class="' . ($title === 'Skills' ? 'active' : '') . '">
                     <div class="text-block-12">Skills</div>
                 </a>
             </div>
-
-            <div class="menu_item' . ($title === 'Stats' ? ' active' : '') . '">
-                <a href="./stats">
-                    <div class="text-block-12">Stats</div>
-                </a>
-            </div>
             
-            <div class="menu_item' . ($title === 'Resume' ? ' active' : '') . '">
-                <a href="./resume">
+            <div class="menu_item">
+                <a href="./resume" class="' . ($title === 'Resume' ? 'active' : '') . '">
                     <div class="text-block-12">Resume</div>
                 </a>
             </div>
@@ -240,8 +233,7 @@ class Loader
     {
         return '
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.m
-        in.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-visible@1.2.0/jquery.visible.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>

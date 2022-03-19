@@ -13,12 +13,10 @@
         <h1>Austin Dudzik</h1>
         <h2 class="mb-4">Maker. Designer. Developer.</h2>
 
-        <p class="my-3 border-bottom pb-4">Ambitious and talented front-end web developer with
-            5+ years
-            of self-taught experience. Driven to deliver meaningful results, on-time and with
-            great
-            attention to detail. Striving to create positive user experiences that
-            capture true potential.</p>
+        <p class="my-3 border-bottom pb-4">Ambitious and talented front-end web developer with 5+
+            years of self-taught experience. Driven to deliver meaningful results, on-time and with
+            great attention to detail. Striving to create positive user experiences that capture
+            true potential.</p>
 
         <div class="social-items mt-4 mb-5">
             <a href="https://github.com/austin-dudzik" target="_blank" class="me-4">
@@ -62,7 +60,7 @@
         $slider5 = [["Photoshop", "photoshop"], ["Illustrator", "illustrator"], ["Adobe XD", "xd"], ["Figma", "figma"]];
         $slider5 = [["Photoshop", "photoshop"], ["Illustrator", "illustrator"], ["Adobe XD", "xd"], ["Figma", "figma"]];
         ?>
-        
+
         <p class="small mb-3">Tools & Languages</p>
         <div class="swiper-container swiper-container-free-mode forward overflow-hidden mb-3">
             <div class="swiper-wrapper">
@@ -180,10 +178,10 @@
                         <div>
                             <div>
                                 <div>
-                                    <h4 class="mb-2">Snap-on Incorporated</h4>
-                                    <p class="x-small text-muted mb-0">Web
+                                    <h4 class="mb-2">Web
                                         Developer
-                                        Intern</p>
+                                        Intern</h4>
+                                    <p class="x-small text-muted mb-0">Snap-on Incorporated</p>
                                 </div>
                             </div>
 
@@ -191,8 +189,8 @@
 
                         <div>
 
-                            <p class="small mb-2 text-right">May 2021 - present</p>
-                            <p class="small text-right">Kenosha, Wisconsin</p>
+                            <p class="small mb-2 text-end">May 2021 - present</p>
+                            <p class="small text-end">Kenosha, Wisconsin</p>
 
                         </div>
 
@@ -266,7 +264,10 @@
         <div>
             <h2 class="subheading mt-5 mb-3 fw-900">Unique brand experiences.<br><span
                         class="text-muted">Designed to adapt and evolve.</span></h2>
-            <p class="text mt-0 mb-5">Besides working with code, I've utilized my skills in UI and UX design to create adaptive and flavorful brand logos and design systems that present as modern, unique, and legible. The work I create is well-thought-out and tuned to perfection.</p>
+            <p class="text mt-0 mb-5">Besides working with code, I've utilized my skills in UI and
+                UX design to create adaptive and flavorful brand logos and design systems that
+                present as modern, unique, and legible. The work I create is well-thought-out and
+                tuned to perfection.</p>
         </div>
 
 
@@ -276,95 +277,95 @@
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/shopflow.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/shopflow.png" alt="ShopFlow logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/shopflow.png" alt="ShopFlow logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/hexagonal.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/hexagonal.png" alt="Hexagonal logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/hexagonal.png" alt="Hexagonal logo">
                     </a>
                 </div>
 
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/outage.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/outage.png" alt="Outage logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/outage.png" alt="Outage logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/blossom.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/blossom.png" alt="Blossom logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/blossom.png" alt="Blossom logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/mtn-rd.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/mtn-rd.png"
-                         alt="MTN RD logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/mtn-rd.png"
+                             alt="MTN RD logo">
                     </a>
                 </div>
 
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/sourceview.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/sourceview.png"
-                         alt="SourceView logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/sourceview.png"
+                             alt="SourceView logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/domainkit.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/domainkit.png"
-                         alt="DomainKit logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/domainkit.png"
+                             alt="DomainKit logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/crinkle.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/crinkle.png"
-                         alt="Crinkle logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/crinkle.png"
+                             alt="Crinkle logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/campfire.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/campfire.png"
-                         alt="Campfire logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/campfire.png"
+                             alt="Campfire logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/stackpin.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/stackpin.png"
-                         alt="Stackpin logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/stackpin.png"
+                             alt="Stackpin logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/1mb.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/1mb.png"
-                         alt="1MB logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/1mb.png"
+                             alt="1MB logo">
                     </a>
                 </div>
 
                 <div class="col-md-3 pb-4">
                     <a href="assets/img/logos/rocketfuel.png" data-fancybox="logos">
-                    <img class="img-fluid rounded"
-                         src="assets/img/logos/rocketfuel.png"
-                         alt="RocketFuel logo">
+                        <img class="img-fluid rounded"
+                             src="assets/img/logos/rocketfuel.png"
+                             alt="RocketFuel logo">
                     </a>
                 </div>
 
@@ -379,7 +380,10 @@
 
         <h2 class="subheading mt-5 mb-3 fw-900">Passionate about code.<br><span
                     class="text-muted">Explore my recent projects.</span></h2>
-        <p class="text mt-0 mb-5">I love building new things and have been designing, developing, and deploying new projects and applications over the years, ranging from full-fledged social media platforms to feedback tracking tools that help site owners track website feedback .</p>
+        <p class="text mt-0 mb-5">I love building new things and have been designing, developing,
+            and deploying new projects and applications over the years, ranging from full-fledged
+            social media platforms to feedback tracking tools that help site owners track website
+            feedback .</p>
 
 
         <div class="row">
@@ -469,7 +473,9 @@
         </h2>
         <div class="text mt-0 mb-5">
 
-            By others, I'm most commonly known for my strong work ethic and dedication. I'm always up for a good challenge and can easily adapt to new development languages, projects, and environments.
+            By others, I'm most commonly known for my strong work ethic and dedication. I'm always
+            up for a good challenge and can easily adapt to new development languages, projects, and
+            environments.
             Don't just take it from me, read what others really have to say.
         </div>
 
@@ -493,7 +499,10 @@
             <div class="ps-2 rounded ni mt-4" style="background:#dd45d3">
                 <div class="testimonial mb-4 ni">
                     <blockquote class="mb-3 ps-0">
-                        "Austin has consistently demonstrated a commitment to delivering a high quality work product with his strong work ethic, attention to detail and problem-solving skills.  Coupled with his ability to work as a team member, he goes above and beyond to contribute to the success of his classmates."
+                        "Austin has consistently demonstrated a commitment to delivering a high
+                        quality work product with his strong work ethic, attention to detail and
+                        problem-solving skills. Coupled with his ability to work as a team member,
+                        he goes above and beyond to contribute to the success of his classmates."
                     </blockquote>
                     <p class="fw-500 mb-0">Katie</p>
                     <p class="text-muted mb-0">Instructor @ WCTC</p>
@@ -503,12 +512,17 @@
             <div class="ps-2 rounded ni mt-4" style="background:#fd9d52">
                 <div class="testimonial mb-4 ni">
                     <blockquote class="mb-3 ps-0">
-                        "Austin has consistently demonstrated a commitment to delivering a high quality work product with his strong work ethic, attention to detail and problem-solving skills.  Coupled with his ability to work as a team member, he goes above and beyond to contribute to the success of his classmates."
+                        "Austin has consistently demonstrated a commitment to delivering a high
+                        quality work product with his strong work ethic, attention to detail and
+                        problem-solving skills. Coupled with his ability to work as a team member,
+                        he goes above and beyond to contribute to the success of his classmates."
                     </blockquote>
                     <p class="fw-500 mb-0">Tyler</p>
                     <p class="text-muted mb-0">Instructor @ WCTC</p>
                 </div>
             </div>
+
+        </div>
 
     </section>
 
