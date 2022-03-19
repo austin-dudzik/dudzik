@@ -5,59 +5,38 @@
 <body>
 <?= Loader::getExtras() ?>
 
-<?= Loader::getNavigation() ?>
+<?= Loader::getNavigation('Skills') ?>
 
-<div class="container-fluid w-75">
+<?php
+$topics = [
+    ['Industry Knowledge', ['Front-end Development', 'Marketing', 'Logo Design', 'Sales', 'Digital Media', 'Illustration', 'Image Editing', 'Web Design', 'Search Engine Optimization', 'IT Operations']],
+    ['Tools', ['CloudFlare', 'GitHub', 'Figma', 'Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint', 'Microsoft Outlook', 'Adobe Dreamweaver', 'Google Analytics', 'WordPress', 'Adobe XD', 'Git', 'Adobe Photoshop', 'Adobe Illustrator', 'Bash/Shell', 'Windows', 'Confluence', 'PhpMyAdmin']],
+    ['Languages & Frameworks', ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Vue.js', 'PHP', 'ASP.NET', 'NoSQL', 'Firebase', 'AJAX', 'Oracle SQL', 'C#', 'MySQL', 'Laravel', 'React', 'SASS', 'JSON', 'WordPress', 'Bootstrap']],
+    ['Interpersonal Skills', ['Communication', 'Leadership', 'Problem Solving', 'Management', 'Critical Thinking', 'Time Management', 'Self-Motivation', 'Adaptability', 'Teamwork']]
+];
+?>
 
-    <h1 class="text-center ni"
-        style="font-weight: 900; font-size: 120px; line-height: 125px; letter-spacing: 6px;background: linear-gradient( 288deg ,#b13cff,#dd45d3 50%,#fd9d52); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Skills to Succeed.
+<div class="container">
 
-    </h1>
-
-    <h3>Industry Knowledge</h3>
-    <ul>
-        <a href="#" class="link-5">Front-end Development</a>
-        <li>✅ Front-end Development</li>
-        <li>Marketing</li>
-        <li>Logo Design</li>
-        <li>Sales</li>
-        <li>Digital Media</li>
-        <li>Illustration</li>
-        <li>Image Editing</li>
-        <li>Web Design</li>
-        <li>Search Engine Optimization</li>
-        <li>IT Operations</li>
-    </ul>
-    <h3>Tools</h3>
-    <li>CloudFlare</li>
-    <li>GitHub</li>
-    <li>Figma</li>
-    <li>Microsoft Word</li>
-    <li>Microsoft Excel</li>
-    <li>Microsoft PowerPoint</li>
-    <li>Microsoft Outlook</li>
-    <li>Adobe Dreamweaver</li>
-    <li>Google Analytics</li>
-    <li>WordPress</li>
-    <li>Adobe XD</li>
-    <li>Git</li>
-    <li>Adobe Photoshop</li>
-    <li>Adobe Illustrator</li>
-    <h3>Languages</h3>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>jQuery</li>
-    <li>Vue.js</li>
-    <li>PHP</li>
-    <li>ASP.NET</li>
-    <li>NoSQL</li>
-    <li>Firebase</li>
-    <li>AJAX</li>
-    <li>Oracle Database</li>
-    <li>C#</li>
-    <li>MySQL</li>
-    <h3>Interpersonal Communication</h3>
+    <div class="bg-black text-center mt-5">
+        <h1 class="mb-3 fw-900 mt-0">Skills</h1>
+        <p class="text mt-0 text-muted mb-0">After years of developing, I've established a strong,
+            flexible, and growing skill set in dozens of development languages, tools, and
+            frameworks, ranging from database management to UI and prototyping.</p>
+    </div>
+    <?php for ($i = 0; $i < count($topics); $i++) { ?>
+        <hr class="my-5">
+        <div class="mx-4">
+            <h3 class="mb-4"><?= $topics[$i][0] ?></h3>
+            <div class="row">
+                <?php for ($j = 0; $j < count($topics[$i][1]); $j++) { ?>
+                    <div class="col-md-4 mb-3">
+                        ✅&nbsp; <?= $topics[$i][1][$j] ?>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    <?php } ?>
 
     <?= Loader::getFooter() ?>
 
