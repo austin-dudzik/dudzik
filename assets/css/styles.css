@@ -8620,15 +8620,10 @@ a:active {
   color: #000;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.menu_item {
+.nav-item {
   padding-left: 8px;
 }
-.menu_item a {
+.nav-item a {
   display: flex;
   padding: 4px 8px;
   border-radius: 6px;
@@ -8636,10 +8631,10 @@ a:active {
   text-decoration: none;
   color: #fff;
 }
-.menu_item a.active {
+.nav-item a.active {
   background-color: rgba(255, 255, 255, 0.08);
 }
-.menu_item a:hover {
+.nav-item a:hover {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -8659,7 +8654,6 @@ a:active {
   right: -40px;
   width: 300px;
   opacity: 0.1;
-  z-index: 99;
 }
 
 .gradient-stripe {
@@ -8839,8 +8833,8 @@ a:active {
   color: #fff;
 }
 
-.min-vh-100 {
-  min-height: 100%;
+.d-min-vh-100 {
+  min-height: 100vh;
 }
 
 .heading {
@@ -9188,23 +9182,111 @@ a {
   font-size: 15px;
 }
 
+.heading-alt {
+  font-size: 120px;
+  line-height: 125px;
+  letter-spacing: 6px;
+  background: linear-gradient(0deg, #b13cff, #dd45d3 50%, #fd9d52);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headshot {
+  width: 150px;
+}
+
 @media (max-width: 575.98px) {
+  .container {
+    padding-top: 70px;
+  }
+
   .navbar {
     background: #ffffff10 !important;
   }
 
   .intro h1, .intro .h1 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 37px;
+    line-height: 19px;
+  }
+
+  .intro h2, .intro .h2 {
+    font-size: 18px;
   }
 
   .intro p {
     font-size: 16px;
+    line-height: 20px;
+  }
+
+  section .subheading {
+    font-size: 27px;
+    line-height: 28px;
+  }
+
+  section .text {
+    font-size: 15px;
     line-height: 24px;
+  }
+
+  .testimonial blockquote {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .briefer p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .inquiry .subheading {
+    font-size: 26px;
+  }
+
+  .small {
+    font-size: 13px;
+  }
+
+  .d-min-vh-100 {
+    min-height: initial;
+  }
+
+  .intro .social-items a {
+    font-size: 16px;
+  }
+
+  .logo_float {
+    display: none;
+  }
+
+  .intro.container {
+    padding: 70px 1.5rem;
+  }
+
+  .heading-alt, .heading {
+    font-size: 44px;
+    line-height: 51px;
+  }
+
+  .headshot {
+    width: 100%;
+  }
+
+  .large-block {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .heading.heading-lg {
+    font-size: 51px;
+    line-height: 63px;
   }
 }
 /* Small devices */
 @media (min-width: 576px) {
+  .d-min-vh-100 {
+    min-height: initial;
+  }
+
   .navbar {
     padding: 37px;
   }
@@ -9215,6 +9297,10 @@ a {
 
   .container {
     width: 100% !important;
+  }
+
+  .intro.container {
+    padding: 140px 1.5rem;
   }
 }
 /* Medium devices (tablets, 768px and up) */
