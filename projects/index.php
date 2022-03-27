@@ -1,4 +1,4 @@
-<?php require_once "classes/Loader.php" ?>
+<?php require_once "../config.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <?= Loader::getHead('Projects') ?>
@@ -11,8 +11,7 @@
 
     <section class="my-5 mt-5 pt-2">
 
-
-                <div class="bg-black text-center mt-5">
+                <div class="text-start text-md-center mt-5">
                     <h1 class="mb-3 fw-900 mt-0">Projects</h1>
                     <p class="text mt-0 text-muted mb-0">I love building new things and have been designing, developing,
                         and deploying new projects and applications over the years, ranging from full-fledged
@@ -22,16 +21,13 @@
 
         <hr class="my-5">
 
-
-
-
         <div class="row mt-4">
 
             <div class="col-md-6 mb-4">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/nova.png" alt="Nova cover"
+                    <img src="../assets/img/projects/covers/nova.png" alt="Nova cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/nova.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/nova.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
                         <div class="title">Nova</div>
@@ -39,12 +35,12 @@
                             platform
                         </div>
                         <div class="d-flex ps-1">
-                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/html-5--v1.png">
-                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/css3.png">
-                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/php-logo.png">
-                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/javascript.png">
-                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/jquery.png">
-                            <img class="me-3" src="https://img.icons8.com/material-outlined/20/ffffff/mysql-logo.png">
+                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/html-5--v1.png" alt="">
+                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/css3.png" alt="">
+                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/php-logo.png" alt="">
+                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/javascript.png" alt="">
+                            <img class="me-3" src="https://img.icons8.com/ios-filled/20/ffffff/jquery.png" alt="">
+                            <img class="me-3" src="https://img.icons8.com/material-outlined/20/ffffff/mysql-logo.png" alt="">
                         </div>
                     </div>
                 </a>
@@ -52,9 +48,9 @@
 
             <div class="col-md-6 mb-4">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/spark.png" alt="Nova cover"
+                    <img src="../assets/img/projects/covers/spark.png" alt="Nova cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/spark.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/spark.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
                         <div class="title">Spark</div>
@@ -70,14 +66,14 @@
 
             <div class="col-md-6 mb-4">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/insight.png" alt="Insight cover"
+                    <img src="../assets/img/projects/covers/insight.png" alt="Insight cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/insight.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/insight.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
                         <div class="title">Insight</div>
-                        <div class="subtitle text-muted mb-2">User feedback collection
-                            platform
+                        <div class="subtitle text-muted mb-2">Customer
+                            management application
                         </div>
                         <img class="me-2" src="https://img.icons8.com/windows/20/ffffff/oracle-logo.png" data-toggle="tooltip" data-placement="top" title="Oracle SQL">
                         <img class="me-2" src="https://img.icons8.com/ios-filled/20/ffffff/c-sharp-logo.png" data-toggle="tooltip" data-placement="top" title="C#">
@@ -90,9 +86,9 @@
 
             <div class="col-md-6 mb-4">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/nova.png" alt="Nova cover"
+                    <img src="../assets/img/projects/covers/nova.png" alt="Nova cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/coordinator.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/coordinator.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
                         <div class="title">Coordinator</div>
@@ -109,14 +105,13 @@
 
             <div class="col-md-6 mb-4">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/lirwc.png" alt="Nova cover"
+                    <img src="../assets/img/projects/covers/lirwc.png" alt="Nova cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/lirwc.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/lirwc.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
                         <div class="title">LIRWC</div>
-                        <div class="subtitle text-muted mb-2">User feedback collection
-                            platform
+                        <div class="subtitle text-muted mb-2">Client site & class registration system
                         </div>
                         <img class="me-2" src="https://img.icons8.com/ios-filled/20/ffffff/wordpress--v1.png" data-toggle="tooltip" data-placement="top" title="WordPress">
                         <img class="me-2" src="https://img.icons8.com/ios-glyphs/20/ffffff/css3.png" data-toggle="tooltip" data-placement="top" title="CSS">
@@ -128,14 +123,13 @@
 
             <div class="col-md-6 mb-4">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/eric_carle_homepage.png" alt="Nova cover"
+                    <img src="../assets/img/projects/covers/eric_carle_homepage.png" alt="Nova cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/eric_carle_homepage.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/eric_carle_homepage.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
                         <div class="title">Eric Carle</div>
-                        <div class="subtitle text-muted mb-2">User feedback collection
-                            platform
+                        <div class="subtitle text-muted mb-2">Mock author homepage
                         </div>
                         <img class="me-2" src="https://img.icons8.com/ios-filled/20/ffffff/wordpress--v1.png" data-toggle="tooltip" data-placement="top" title="WordPress">
                         <img class="me-2" src="https://img.icons8.com/ios-glyphs/20/ffffff/css3.png" data-toggle="tooltip" data-placement="top" title="CSS">
@@ -147,14 +141,13 @@
 
             <div class="col-md-6 mb-4">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/nova.png" alt="Nova cover"
+                    <img src="../assets/img/projects/covers/nova.png" alt="Nova cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/crinkle.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/crinkle.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
                         <div class="title">Crinkle</div>
-                        <div class="subtitle text-muted mb-2">User feedback collection
-                            platform
+                        <div class="subtitle text-muted mb-2">Smart URL shortening service
                         </div>
                         <img class="me-2" src="https://img.icons8.com/ios-filled/20/ffffff/html-5--v1.png" data-toggle="tooltip" data-placement="top" title="HTML">
                         <img class="me-2" src="https://img.icons8.com/ios-glyphs/20/ffffff/css3.png" data-toggle="tooltip" data-placement="top" title="CSS">
@@ -166,13 +159,13 @@
 
             <div class="col-md-6 mb-4">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/campfire.png" alt="Nova cover"
+                    <img src="../assets/img/projects/covers/campfire.png" alt="Nova cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/campfire.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/campfire.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-5 pt-3 pb-2">
                         <div class="title">Campfire</div>
-                        <div class="subtitle text-muted mb-2">Website feeedback tool
+                        <div class="subtitle text-muted mb-2">Website feedback tool
                         </div>
                         <img class="me-2" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/20/ffffff/external-bootstrap-a-free-and-open-source-css-framework-logo-bold-tal-revivo.png" data-toggle="tooltip" data-placement="top" title="Bootstrap">
                         <img class="me-2" src="https://img.icons8.com/ios-filled/20/ffffff/jquery.png" data-toggle="tooltip" data-placement="top" title="jQuery">
@@ -184,9 +177,9 @@
 
             <div class="col-md-6">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/dune.png" alt="Dune cover"
+                    <img src="../assets/img/projects/covers/dune.png" alt="Dune cover"
                          class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/dune.png"
+                    <img width="75" height="75" src="../assets/img/projects/icons/dune.png"
                          alt="DomainKit" class="icon ms-4">
                     <div class="p-4 pb-4 pt-3 pb-2">
                         <div class="title">Dune</div>
@@ -202,10 +195,10 @@
 
             <div class="col-md-6">
                 <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/yale.png"
+                    <img src="../assets/img/projects/covers/yale.png"
                          alt="Dune cover" class="img-fluid w-100 rounded-top">
                     <img width="75" height="75"
-                         src="assets/img/projects/icons/yale.png" alt="DomainKit"
+                         src="../assets/img/projects/icons/yale.png" alt="DomainKit"
                          class="icon ms-4">
                     <div class="p-4 pb-4 pt-3 pb-2">
                         <div class="title">Yale SoA</div>
