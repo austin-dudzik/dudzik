@@ -1,4 +1,4 @@
-<?php require_once "classes/Loader.php" ?>
+<?php require_once "config.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <?= Loader::getHead('404 - Page Not Found') ?>
@@ -14,7 +14,7 @@
 
     <p class="text mb-4">Instead, how about checking out my homepage?</p>
 
-    <a href="./" class="btn-custom rounded-ex text-black">
+    <a href="<?= $site_url ?>" class="submit-button">
         Continue to homepage <i class="far fa-long-arrow-right ms-2"></i>
     </a>
 
