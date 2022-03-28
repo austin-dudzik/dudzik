@@ -1,4 +1,4 @@
-<?php require_once "classes/Loader.php" ?>
+<?php require_once "config.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <?= Loader::getHead() ?>
@@ -7,37 +7,45 @@
 
 <?= Loader::getNavigation() ?>
 
-<header class="bg-gradient min-vh-100 ni pt-5">
+<header class="bg-gradient d-min-vh-100 ni pt-5">
 
     <div class="container intro">
         <h1>Austin Dudzik</h1>
-        <h2 class="mb-4">Maker. Designer. Developer.</h2>
+        <h2 class="mb-0 mb-md-4">Maker. Designer. Developer.</h2>
 
         <p class="my-3 border-bottom pb-4">Ambitious and talented front-end web developer with 5+
             years of self-taught experience. Driven to deliver meaningful results, on-time and with
             great attention to detail. Striving to create positive user experiences that capture
             true potential.</p>
 
-        <div class="social-items mt-4 mb-5">
-            <a href="https://github.com/austin-dudzik" target="_blank" class="me-4">
+        <div class="row social-items mt-4">
+            <div class="col-12 col-md mb-3">
+            <a href="<?= $social["github"] ?>" target="_blank">
                 <i class="fab fa-github me-2"></i> GitHub
             </a>
-            <a href="https://linkedin.com/in/austin-dudzik" target="_blank" class="me-4">
+            </div>
+            <div class="col-12 col-md mb-3">
+            <a href="<?= $social["linkedin"] ?>" target="_blank">
                 <i class="fab fa-linkedin me-2"></i> LinkedIn
             </a>
-            <a href="https://dribbble.com/d_austin" target="_blank" class="me-4">
+        </div>
+            <div class="col-12 col-md mb-3">
+            <a href="<?= $social["dribbble"] ?>" target="_blank">
                 <i class="fab fa-dribbble me-2"></i> Dribbble
             </a>
-            <a href="mailto:austin@dudzik.dev" target="_blank" class="me-4">
-                <i class="fas fa-envelope me-3"></i>austin@dudzik.dev
+    </div>
+            <div class="col-12 col-md-5 mb-3">
+            <a href="mailto:<?= $email ?>" target="_blank">
+                <i class="fas fa-envelope me-3"></i><?= $email ?>
             </a>
+    </div>
         </div>
 
     </div>
 
 </header>
 
-<div class="container pt-5">
+<div class="container pt-0 pt-md-5">
 
     <section class="my-5">
 
@@ -52,101 +60,42 @@
             database management to UI and
             prototyping.</p>
 
-        <?php
-        $slider1 = [["Vue", "vue"], ["Laravel", "laravel"], ["CloudFlare", "cloudflare"], ["Firebase", "firebase"]];
-        $slider2 = [["WordPress", "wordpress"], ["Git", "git"], ["HTML", "html"], ["jQuery", "jquery"]];
-        $slider3 = [["CSS", "css"], ["JavaScript", "javascript"], ["C#", "c-sharp"], ["Bootstrap", "bootstrap"]];
-        $slider4 = [["Word", "word"], ["Excel", "excel"], ["PowerPoint", "powerpoint"], ["Outlook", "outlook"]];
-        $slider5 = [["Photoshop", "photoshop"], ["Illustrator", "illustrator"], ["Adobe XD", "xd"], ["Figma", "figma"]];
-        $slider5 = [["Photoshop", "photoshop"], ["Illustrator", "illustrator"], ["Adobe XD", "xd"], ["Figma", "figma"]];
-        ?>
 
         <p class="small mb-3">Tools & Languages</p>
-        <div class="swiper-container swiper-container-free-mode forward overflow-hidden mb-3">
-            <div class="swiper-wrapper">
-                <?php for ($i = 0; $i < count($slider1); $i++) { ?>
-                    <div class="swiper-slide">
-                        <div class="card text-center p-0 px-3">
-                            <div class="card-body">
-                                <img src="assets/img/knowledge/<?= $slider1[$i][1] ?>.png"
-                                     class="me-2"
-                                     alt="" width="20"> <?= $slider1[$i][0] ?>
+
+        <?php
+        $sliders = [
+            [["Vue", "vue"], ["Laravel", "laravel"], ["CloudFlare", "cloudflare"], ["Firebase", "firebase"]],
+            [["WordPress", "wordpress"], ["Git", "git"], ["HTML", "html"], ["jQuery", "jquery"]],
+            [["CSS", "css"], ["JavaScript", "javascript"], ["C#", "c-sharp"], ["Bootstrap", "bootstrap"]],
+            [["Word", "word"], ["Excel", "excel"], ["PowerPoint", "powerpoint"], ["Outlook", "outlook"]],
+            [["Photoshop", "photoshop"], ["Illustrator", "illustrator"], ["Adobe XD", "xd"], ["Figma", "figma"]]
+        ];
+
+        foreach ($sliders as $key => $slider) { ?>
+            <div class="swiper-container swiper-container-free-mode <?= ($key % 2 == 0) ? "forward" : "reverse" ?> overflow-hidden mb-3">
+                <div class="swiper-wrapper">
+                    <?php foreach ($slider as $item) { ?>
+                        <div class="swiper-slide">
+                            <div class="card text-center p-0 px-3">
+                                <div class="card-body">
+                                    <img src="assets/img/knowledge/<?= $item[1] ?>.png" class="me-2"
+                                         alt="" height="20"> <?= $item[0] ?>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php } ?>
+                    <?php } ?>
+                </div>
             </div>
-        </div>
+        <?php } ?>
 
-        <div class="swiper-container swiper-container-free-mode reverse overflow-hidden mb-3">
-            <div class="swiper-wrapper">
-                <?php for ($i = 0; $i < count($slider2); $i++) { ?>
-                    <div class="swiper-slide">
-                        <div class="card text-center p-0 px-3">
-                            <div class="card-body">
-                                <img src="assets/img/knowledge/<?= $slider2[$i][1] ?>.png"
-                                     class="me-2"
-                                     alt="" width="20"> <?= $slider2[$i][0] ?>
-                            </div>
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-
-        <div class="swiper-container swiper-container-free-mode forward overflow-hidden mb-3">
-            <div class="swiper-wrapper">
-                <?php for ($i = 0; $i < count($slider3); $i++) { ?>
-                    <div class="swiper-slide">
-                        <div class="card text-center p-0 px-3">
-                            <div class="card-body">
-                                <img src="assets/img/knowledge/<?= $slider3[$i][1] ?>.png"
-                                     class="me-2"
-                                     alt="" width="20"> <?= $slider3[$i][0] ?>
-                            </div>
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-
-        <div class="swiper-container swiper-container-free-mode reverse overflow-hidden mb-3">
-            <div class="swiper-wrapper">
-                <?php for ($i = 0; $i < count($slider4); $i++) { ?>
-                    <div class="swiper-slide">
-                        <div class="card text-center p-0 px-3">
-                            <div class="card-body">
-                                <img src="assets/img/knowledge/<?= $slider4[$i][1] ?>.png"
-                                     class="me-2"
-                                     alt="" width="20"> <?= $slider4[$i][0] ?>
-                            </div>
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-
-        <div class="swiper-container swiper-container-free-mode forward overflow-hidden mb-3">
-            <div class="swiper-wrapper">
-                <?php for ($i = 0; $i < count($slider5); $i++) { ?>
-                    <div class="swiper-slide">
-                        <div class="card text-center p-0 px-3">
-                            <div class="card-body">
-                                <img src="assets/img/knowledge/<?= $slider5[$i][1] ?>.png"
-                                     class="me-2"
-                                     alt="" width="20"> <?= $slider5[$i][0] ?>
-                            </div>
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-
-        <div class="d-flex justify-content-center mb-4 mt-4">
+        <div class="d-flex justify-content-center my-4">
             <div class="bg-gradient ni p-1 rounded">
-                <a href="#" class="button-3 w-button hover-grad ni">
+                <div class="button-3 hover-grad ni px-4 py-2">
+                    <a href="<?= $site_url ?>/skills" class="text-white">
                     Explore entire skill set <i class="far fa-long-arrow-right ms-2"></i>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -168,90 +117,44 @@
             time again.</p>
 
         <div class="bg-gradient p-1 ni mb-5 rounded">
-            <div class="card p-4 ni">
+            <div class="card p-2 p-md-4 ni">
                 <div class="card-body">
-                    <img width="50"
-                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEwmBs4BzmGhMKA5QqMrU6cu10b5yxscJHjqmgxILeD-_wXWejXQweii6YRgynHuR9enU&usqp=CAU"
-                         class="rounded" alt="">
-
-                    <div class="d-flex justify-content-between mb-2">
+                    <?php if ($experience["wd-intern"]["img"] != "") { ?>
+                        <img src="<?= $experience["wd-intern"]["img"] ?>" class="rounded mb-2"
+                             width="50" alt="">
+                    <?php } ?>
+                    <div class="d-none d-md-flex justify-content-between mb-2">
                         <div>
-                            <div>
-                                <div>
-                                    <h4 class="mb-2">Web
-                                        Developer
-                                        Intern</h4>
-                                    <p class="x-small text-muted mb-0">Snap-on Incorporated</p>
-                                </div>
-                            </div>
-
+                            <h4 class="mb-2"><?= $experience["wd-intern"]["title"] ?></h4>
+                            <p class="x-small text-muted mb-0"><?= $experience["wd-intern"]["workplace"] ?></p>
                         </div>
-
                         <div>
-
-                            <p class="small mb-2 text-end">May 2021 - present</p>
-                            <p class="small text-end">Kenosha, Wisconsin</p>
-
+                            <p class="small mb-2 text-end">
+                                <?= $experience["wd-intern"]["start"] ?>
+                                - <?= $experience["wd-intern"]["end"] ?>
+                            </p>
+                            <p class="small text-end"><?= $experience["wd-intern"]["location"] ?></p>
                         </div>
-
                     </div>
-
-
-                    <div class="d-flex">
-                        <div class="me-2 ni">✨</div>
-                        <p class="mb-2">Accelerated the design, development, and deployment of 3 new
-                            internal applications</p>
+                    <div class="d-block d-md-none mb-2">
+                        <div>
+                            <h4 class="mb-2"><?= $experience["wd-intern"]["title"] ?></h4>
+                            <p class="x-small text-muted mb-0"><?= $experience["wd-intern"]["workplace"] ?></p>
+                        </div>
+                        <div>
+                            <p class="small mt-2 mb-2">
+                                <?= $experience["wd-intern"]["start"] ?>
+                                - <?= $experience["wd-intern"]["end"] ?>
+                            </p>
+                            <p class="small"><?= $experience["wd-intern"]["location"] ?></p>
+                        </div>
                     </div>
-
-                    <div class="d-flex">
-                        <div class="me-2 ni">✨</div>
-                        <p class="mb-2">Organized and participated in device enrollment and roll out
-                            of
-                            application pilot program to 40+ iPad devices</p>
-                    </div>
-
-                    <div class="d-flex">
-                        <div class="me-2 ni">✨</div>
-                        <p class="mb-2">Diagnosed slow and demanding SQL queries to improve
-                            application
-                            load
-                            times and performance</p>
-                    </div>
-
-                    <div class="d-flex">
-                        <div class="me-2 ni">✨</div>
-                        <p class="mb-2">Identified potential security threats and concerns in
-                            infrastructure</p>
-                    </div>
-
-                    <div class="d-flex">
-                        <div class="me-2 ni">✨</div>
-                        <p class="mb-2">Performed regular audits to ensure code is error-free and
-                            meets
-                            conventional standards</p>
-                    </div>
-
-                    <div class="d-flex">
-                        <div class="me-2 ni">✨</div>
-                        <p class="mb-2">Implemented new features and code modifications based on
-                            in-field user
-                            feedback</p>
-                    </div>
-
-                    <div class="d-flex">
-                        <div class="me-2 ni">✨</div>
-                        <p class="mb-2">Integrated multiple new API endpoints to retrieve customer
-                            data
-                            and
-                            insights</p>
-                    </div>
-
-                    <div class="d-flex">
-                        <div class="me-2 ni">✨</div>
-                        <p class="mb-2">Collaborated with team members to discuss new ideas and
-                            implementations</p>
-                    </div>
-
+                    <?php foreach ($experience["wd-intern"]["skills"] as $skill) { ?>
+                        <div class="d-flex">
+                            <div class="me-2 ni">✨</div>
+                            <p class="mb-2"><?= $skill ?></p>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
@@ -270,108 +173,23 @@
                 tuned to perfection.</p>
         </div>
 
-
         <div class="mt-5">
-
             <div class="row">
+                <?php
+                $logos = [["ShopFlow", "shopflow"], ["Hexagonal", "hexagonal"], ["Outage", "outage"], ["Blossom", "blossom"], ["MTN RD", "mtn-rd"], ["SourceView", "sourceview"], ["DomainKit", "domainkit"], ["Crinkle", "crinkle"], ["Campfire", "campfire"], ["Stackpin", "stackpin"], ["1MB", "1mb"], ["RocketFuel", "rocketfuel"]];
 
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/shopflow.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/shopflow.png" alt="ShopFlow logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/hexagonal.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/hexagonal.png" alt="Hexagonal logo">
-                    </a>
-                </div>
-
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/outage.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/outage.png" alt="Outage logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/blossom.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/blossom.png" alt="Blossom logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/mtn-rd.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/mtn-rd.png"
-                             alt="MTN RD logo">
-                    </a>
-                </div>
-
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/sourceview.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/sourceview.png"
-                             alt="SourceView logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/domainkit.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/domainkit.png"
-                             alt="DomainKit logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/crinkle.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/crinkle.png"
-                             alt="Crinkle logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/campfire.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/campfire.png"
-                             alt="Campfire logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/stackpin.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/stackpin.png"
-                             alt="Stackpin logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/1mb.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/1mb.png"
-                             alt="1MB logo">
-                    </a>
-                </div>
-
-                <div class="col-md-3 pb-4">
-                    <a href="assets/img/logos/rocketfuel.png" data-fancybox="logos">
-                        <img class="img-fluid rounded"
-                             src="assets/img/logos/rocketfuel.png"
-                             alt="RocketFuel logo">
-                    </a>
-                </div>
-
+                foreach ($logos as $logo) { ?>
+                    <div class="col-6 col-md-3 pb-4">
+                        <a href="assets/img/logos/<?= $logo[1] ?>.png" data-fancybox="logos">
+                            <img class="img-fluid rounded"
+                                 src="assets/img/logos/<?= $logo[1] ?>.png"
+                                 alt="<?= $logo[0] ?> logo">
+                        </a>
+                    </div>
+                <?php } ?>
             </div>
-
         </div>
+
     </section>
 
     <div class="divider"></div>
@@ -383,7 +201,7 @@
         <p class="text mt-0 mb-5">I love building new things and have been designing, developing,
             and deploying new projects and applications over the years, ranging from full-fledged
             social media platforms to feedback tracking tools that help site owners track website
-            feedback .</p>
+            feedback.</p>
 
 
         <div class="row">
@@ -469,10 +287,10 @@
 
     <section class="my-5">
 
-        <h2 class="subheading mt-5 mb-3 fw-900">Hear what they think.<br><span class="text-muted">Read the testimonials.</span>
+        <h2 class="subheading mt-5 mb-3 fw-900">Hear what they think.
+            <br><span class="text-muted">Read the testimonials.</span>
         </h2>
         <div class="text mt-0 mb-5">
-
             By others, I'm most commonly known for my strong work ethic and dedication. I'm always
             up for a good challenge and can easily adapt to new development languages, projects, and
             environments.
@@ -481,46 +299,27 @@
 
         <div class="mt-5">
 
-            <div class="ps-2 rounded ni" style="background:#b13cff">
-                <div class="testimonial mb-4 ni">
-                    <blockquote class="mb-3 ps-0">
-                        "Austin has great attention to detail and can quickly grasp existing
-                        codebases, offering alternative code approaches and improvements along the
-                        way. He has been responsive in integrating new features on time and
-                        implementing fixes to improve security, functionality, and usability. He has
-                        been able to adapt well in all situations and has been a great addition to
-                        our team."
-                    </blockquote>
-                    <p class="fw-500 mb-0">Jason</p>
-                    <p class="text-muted mb-0">Supervisor @ Snap-on Incorporated</p>
-                </div>
-            </div>
+            <?php
 
-            <div class="ps-2 rounded ni mt-4" style="background:#dd45d3">
-                <div class="testimonial mb-4 ni">
-                    <blockquote class="mb-3 ps-0">
-                        "Austin has consistently demonstrated a commitment to delivering a high
-                        quality work product with his strong work ethic, attention to detail and
-                        problem-solving skills. Coupled with his ability to work as a team member,
-                        he goes above and beyond to contribute to the success of his classmates."
-                    </blockquote>
-                    <p class="fw-500 mb-0">Katie</p>
-                    <p class="text-muted mb-0">Instructor @ WCTC</p>
-                </div>
-            </div>
+            $testimonials = [
+                ["name" => "Jason", "title" => "Supervisor", "company" => "Snap-on Incorporated", "quote" => "Austin has great attention to detail and can quickly grasp existing codebases, offering alternative code approaches and improvements along the way. He has been responsive in integrating new features on time and implementing fixes to improve security, functionality, and usability. He has been able to adapt well in all situations and has been a great addition to our team.", "color" => "#b13cff"],
 
-            <div class="ps-2 rounded ni mt-4" style="background:#fd9d52">
-                <div class="testimonial mb-4 ni">
-                    <blockquote class="mb-3 ps-0">
-                        "Austin has consistently demonstrated a commitment to delivering a high
-                        quality work product with his strong work ethic, attention to detail and
-                        problem-solving skills. Coupled with his ability to work as a team member,
-                        he goes above and beyond to contribute to the success of his classmates."
-                    </blockquote>
-                    <p class="fw-500 mb-0">Tyler</p>
-                    <p class="text-muted mb-0">Instructor @ WCTC</p>
+                ["name" => "Katie", "title" => "Instructor", "company" => "WCTC", "quote" => "Austin has consistently demonstrated a commitment to delivering a high quality work product with his strong work ethic, attention to detail and problem-solving skills. Coupled with his ability to work as a team member, he goes above and beyond to contribute to the success of his classmates.", "color" => "#dd45d3"],
+
+                ["name" => "Tyler", "title" => "Instructor", "company" => "WCTC", "quote" => "Austin has consistently demonstrated a commitment to delivering a high quality work product with his strong work ethic, attention to detail and problem-solving skills. Coupled with his ability to work as a team member, he goes above and beyond to contribute to the success of his classmates.", "color" => "#fd9d52"],
+            ];
+
+            foreach($testimonials as $testimonial) { ?>
+                <div class="ps-2 rounded ni" style="background:<?= $testimonial["color"] ?>">
+                    <div class="testimonial mb-4 ni">
+                        <blockquote class="mb-3 ps-0 pe-0 pe-md-3">
+                            "<?= $testimonial["quote"] ?>"
+                        </blockquote>
+                        <p class="fw-500 mb-0"><?= $testimonial["name"] ?></p>
+                        <p class="text-muted mb-0"><?= $testimonial["title"] ?> @ <?= $testimonial["company"] ?></p>
+                    </div>
                 </div>
-            </div>
+            <?php } ?>
 
         </div>
 
