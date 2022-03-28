@@ -40,11 +40,14 @@ $(window).on("load", () => {
 new Swiper('.swiper-container.forward', {
     loop: true,
     slidesPerView: 'auto',
+    loopedSlides: 5,
     spaceBetween: 20,
     navigation: false,
     delay: 0,
     speed: 10000,
+    centeredSlides: true,
     simulateTouch: false,
+    draggable: false,
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
@@ -54,11 +57,14 @@ new Swiper('.swiper-container.forward', {
 new Swiper('.swiper-container.reverse', {
     loop: true,
     slidesPerView: 'auto',
+    loopedSlides: 5,
     spaceBetween: 20,
     navigation: false,
     delay: 0,
     speed: 10000,
+    centeredSlides: true,
     simulateTouch: false,
+    draggable: false,
     autoplay: {
         delay: 0,
         reverseDirection: true,
@@ -94,4 +100,8 @@ Fancybox.bind('[data-fancybox]', {
             );
         },
     },
+});
+
+$(".navbar-toggler").on("click", () => {
+    $(".navbar").toggleClass("bg-dark");
 });
