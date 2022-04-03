@@ -38,7 +38,7 @@ if (!$project) {
         <img src="<?= $site_url ?>/assets/img/projects/<?= $project["slug"] ?>/01.png"
              class="img-fluid w-100 rounded-top" alt="Cover of <?= $project["name"] ?>">
         <img width="100" height="100"
-             src="<?= $site_url ?>/assets/img/projects/icons/<?= $project["slug"] ?>.png"
+             src="<?= $site_url ?>/assets/img/projects/<?= $project["slug"] ?>/icon.png"
              style="margin-top: -40px" alt="Icon for <?= $project["name"] ?>"
              class="image-8 ms-4 ms-md-5">
         <div class="m-4 mt-0 m-md-5 mt-md-4">
@@ -71,7 +71,7 @@ if (!$project) {
                 <div class="row">
                     <?php foreach ($project["lang"] as $lang) {
                         echo '<div class="col-md-4 mb-2">
-                            <li>' . $lang . '</li>
+                            <i class="fal fa-circle-small me-3"></i>' . $lang . '
                             </div>';
                     } ?>
                 </div>
@@ -109,11 +109,11 @@ if (!$project) {
             <div class="col-md-4">
                 <a href="<?= $site_url . '/projects/' . $projects[$key]["slug"] ?>"
                    class="card p-0">
-                    <img src="../assets/img/projects/covers/<?= $projects[$key]["slug"] ?>.png"
+                    <img src="../assets/img/projects/<?= $projects[$key]["slug"] ?>/01.png"
                          class="img-fluid w-100 rounded-top"
                          alt="Cover of <?= $projects[$key]["name"] ?>">
                     <img width="75" height="75"
-                         src="../assets/img/projects/icons/<?= $projects[$key]["slug"] ?>.png"
+                         src="../assets/img/projects/<?= $projects[$key]["slug"] ?>/icon.png"
                          style="margin-top: -36px;margin-left: 34%;"
                          alt="Icon of <?= $projects[$key]["name"] ?>">
                     <div class="p-4 text-center pt-3">
