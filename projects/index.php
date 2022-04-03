@@ -7,7 +7,7 @@
 
 <?= Loader::getNavigation('Projects') ?>
 
-<div class="container pt-5">
+<div class="container pt-5" id="page">
 
     <section class="my-5 mt-5 pt-2">
 
