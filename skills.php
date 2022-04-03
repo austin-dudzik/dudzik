@@ -9,10 +9,10 @@
 
 <?php
 $topics = [
-    ['Industry Knowledge', ['Front-end Development', 'Marketing', 'Logo Design', 'Sales', 'Digital Media', 'Illustration', 'Image Editing', 'Web Design', 'IT Operations', 'SEO']],
-    ['Tools', ['CloudFlare', 'GitHub', 'Figma', 'Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint', 'Microsoft Outlook', 'Adobe Dreamweaver', 'Google Analytics', 'WordPress', 'Adobe XD', 'Git', 'Adobe Photoshop', 'Adobe Illustrator', 'Bash/Shell', 'Windows', 'Confluence', 'PhpMyAdmin']],
-    ['Languages & Frameworks', ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Vue.js', 'PHP', 'ASP.NET', 'NoSQL', 'Firebase', 'AJAX', 'Oracle SQL', 'C#', 'MySQL', 'Laravel', 'React', 'Sass', 'JSON', 'WordPress', 'Bootstrap']],
-    ['Interpersonal Skills', ['Communication', 'Leadership', 'Problem Solving', 'Management', 'Critical Thinking', 'Time Management', 'Self-Motivation', 'Adaptability', 'Teamwork']]
+    'Industry Knowledge' => ['Front-end Development', 'Marketing', 'Logo Design', 'Sales', 'Digital Media', 'Illustration', 'Image Editing', 'Web Design', 'IT Operations', 'SEO'],
+    'Tools' => ['CloudFlare', 'GitHub', 'Figma', 'Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint', 'Microsoft Outlook', 'Adobe Dreamweaver', 'Google Analytics', 'WordPress', 'Adobe XD', 'Git', 'Adobe Photoshop', 'Adobe Illustrator', 'Bash/Shell', 'Windows', 'Confluence', 'PhpMyAdmin', 'WebStorm', 'PhpStorm', 'Visual Studio', 'DBeaver', 'Windows', 'macOS', 'Ubuntu' ],
+    'Languages & Frameworks' => ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Vue.js', 'PHP', 'ASP.NET', 'NoSQL', 'Firebase', 'AJAX', 'Oracle SQL', 'C#', 'MySQL', 'Laravel', 'React', 'Sass', 'JSON', 'WordPress', 'Bootstrap', 'Tailwind', 'Vuetify', 'MUI', 'styled-components'],
+    'Interpersonal Skills' => ['Communication', 'Leadership', 'Problem Solving', 'Management', 'Critical Thinking', 'Time Management', 'Self-Motivation', 'Adaptability', 'Teamwork']
 ];
 ?>
 
@@ -24,16 +24,17 @@ $topics = [
             flexible, and growing skill set in dozens of development languages, tools, and
             frameworks, ranging from database management to UI and prototyping.</p>
     </div>
-    <?php for ($i = 0; $i < count($topics); $i++) { ?>
+
+    <?php foreach ($topics as $name => $skills) { ?>
         <hr class="my-4 my-md-5">
         <div class="mx-1 mx-md-4">
-            <h3 class="mb-4"><?= $topics[$i][0] ?></h3>
+            <h3 class="mb-4"><?= $name ?></h3>
             <div class="row">
-                <?php for ($j = 0; $j < count($topics[$i][1]); $j++) { ?>
+                <?php foreach ($skills as $skill) { ?>
                     <div class="col-md-4 mb-3">
                         <div class="d-flex">
                             <div class="me-2">✅&nbsp;</div>
-                            <?= $topics[$i][1][$j] ?>
+                            <?= $skill ?>
                         </div>
                     </div>
                 <?php } ?>
