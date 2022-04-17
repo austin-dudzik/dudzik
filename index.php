@@ -18,34 +18,26 @@
             great attention to detail. Striving to create positive user experiences that capture
             true potential.</p>
 
-        <div class="row social-items mt-4">
-            <div class="col-12 col-md mb-3">
-            <a href="<?= $social["github"] ?>" target="_blank">
+        <div class="d-flex flex-wrap social-items mt-4">
+            <a href="<?= $social["behance"] ?>" target="_blank" class="me-4">
+                <i class="fab fa-behance me-2"></i> Behance
+            </a>
+            <a href="<?= $social["github"] ?>" target="_blank" class="me-4">
                 <i class="fab fa-github me-2"></i> GitHub
             </a>
-            </div>
-            <div class="col-12 col-md mb-3">
-            <a href="<?= $social["linkedin"] ?>" target="_blank">
+            <a href="<?= $social["linkedin"] ?>" target="_blank" class="me-4">
                 <i class="fab fa-linkedin me-2"></i> LinkedIn
             </a>
-        </div>
-            <div class="col-12 col-md mb-3">
-            <a href="<?= $social["dribbble"] ?>" target="_blank">
-                <i class="fab fa-dribbble me-2"></i> Dribbble
-            </a>
-    </div>
-            <div class="col-12 col-md-5 mb-3">
-            <a href="mailto:<?= $email ?>" target="_blank">
+            <a href="mailto:<?= $email ?>" target="_blank" class="me-4">
                 <i class="fas fa-envelope me-3"></i><?= $email ?>
             </a>
-    </div>
         </div>
 
     </div>
 
 </header>
 
-<div class="container pt-0 pt-md-5">
+<div class="container pt-0 pt-md-5" id="page">
 
     <section class="my-5">
 
@@ -93,7 +85,7 @@
             <div class="bg-gradient ni p-1 rounded">
                 <div class="button-3 hover-grad ni px-4 py-2">
                     <a href="<?= $site_url ?>/skills" class="text-white">
-                    Explore entire skill set <i class="far fa-long-arrow-right ms-2"></i>
+                        Explore entire skill set <i class="far fa-long-arrow-right ms-2"></i>
                     </a>
                 </div>
             </div>
@@ -203,82 +195,39 @@
             social media platforms to feedback tracking tools that help site owners track website
             feedback.</p>
 
-
         <div class="row">
+            <?php
+            $p = 0;
+            foreach ($projects as $project) { ?>
+                <div class="col-md-6 mb-4">
+                    <a href="<?= $site_url ?>/projects/<?= $project["slug"] ?>"
+                       class="card hover p-0">
+                        <img src="<?= $site_url ?>/assets/img/projects/<?= $project["slug"] ?>/01.png"
+                             alt="<?= $project["name"] ?> cover"
+                             class="img-fluid w-100 rounded-top">
+                        <img width="75" height="75"
+                             src="<?= $site_url ?>/assets/img/projects/<?= $project["slug"] ?>/icon.png"
+                             alt="<?= $project["name"] ?> icon" class="icon ms-4">
+                        <div class="p-4 pb-5 pt-3 pb-2">
+                            <div class="title"><?= $project["name"] ?></div>
+                            <div class="subtitle text-muted mb-2"><?= $project["short_desc"] ?></div>
 
-            <div class="col-md-6 mb-4">
-                <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/nova.png" alt="Nova cover"
-                         class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/nova.png"
-                         alt="DomainKit" class="icon ms-4">
-                    <div class="p-4 pb-5 pt-3 pb-2">
-                        <div class="title">Nova</div>
-                        <div class="subtitle text-muted mb-2">User feedback collection
-                            platform
+                            <?php for ($i = 0; $i < min(count($project["lang"]), 3); $i++) { ?>
+                                <div class="badge text-white me-1 border-secondary border"><?= $project["lang"][$i] ?></div>
+                            <?php } ?>
+
+                            <?php if (count($project["lang"]) > 3) { ?>
+                                <div class="badge text-white me-1">
+                                    +<?= count($project["lang"]) - 3 ?> more
+                                </div>
+                            <?php } ?>
                         </div>
-                        <div class="badge bg-dark text-white me-1">PHP</div>
-                        <div class="badge bg-dark text-white me-1">JavaScript</div>
-                        <div class="badge bg-dark text-white me-1">JSON</div>
-                        <div class="badge text-white">+5 more</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6 mb-4">
-                <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/campfire.png" alt="Nova cover"
-                         class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/campfire.png"
-                         alt="DomainKit" class="icon ms-4">
-                    <div class="p-4 pb-5 pt-3 pb-2">
-                        <div class="title">Campfire</div>
-                        <div class="subtitle text-muted mb-2">Website feeedback tool
-                        </div>
-                        <div class="badge bg-dark text-white me-1">PHP</div>
-                        <div class="badge bg-dark text-white me-1">MySQL</div>
-                        <div class="badge bg-dark text-white me-1">Bootstrap</div>
-                        <div class="badge text-white">+5 more</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/dune.png" alt="Dune cover"
-                         class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75" src="assets/img/projects/icons/dune.png"
-                         alt="DomainKit" class="icon ms-4">
-                    <div class="p-4 pb-5 pt-3 pb-2">
-                        <div class="title">Dune</div>
-                        <div class="subtitle text-muted mb-2">Social media platform for Spotify
-                        </div>
-                        <div class="badge text-white bg-dark me-1">Vue</div>
-                        <div class="badge text-white bg-dark me-1">NoSQL</div>
-                        <div class="badge text-white bg-dark me-1">Spotify API</div>
-                        <div class="badge text-white">+5 more</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="#" class="card hover p-0">
-                    <img src="assets/img/projects/covers/spark.png"
-                         alt="Dune cover" class="img-fluid w-100 rounded-top">
-                    <img width="75" height="75"
-                         src="assets/img/projects/icons/spark.png" alt="DomainKit"
-                         class="icon ms-4">
-                    <div class="p-4 pb-5 pt-3 pb-2">
-                        <div class="title">Spark</div>
-                        <div class="subtitle text-muted mb-2">Task management platform</div>
-                        <div class="badge text-white bg-dark me-1">Laravel</div>
-                        <div class="badge text-white bg-dark me-1">PHP</div>
-                        <div class="badge text-white bg-dark me-1">Bootstrap</div>
-                        <div class="badge text-white">+5 more</div>
-                    </div>
-                </a>
-            </div>
-
+                    </a>
+                </div>
+                <?php
+                $p++;
+                if ($p == 4) break;
+            } ?>
         </div>
 
     </section>
@@ -302,21 +251,22 @@
             <?php
 
             $testimonials = [
-                ["name" => "Jason", "title" => "Supervisor", "company" => "Snap-on Incorporated", "quote" => "Austin has great attention to detail and can quickly grasp existing codebases, offering alternative code approaches and improvements along the way. He has been responsive in integrating new features on time and implementing fixes to improve security, functionality, and usability. He has been able to adapt well in all situations and has been a great addition to our team.", "color" => "#b13cff"],
+                ["name" => "Jason McCann", "title" => "Supervisor", "company" => "Snap-on Incorporated", "quote" => "Austin has great attention to detail and can quickly grasp existing codebases, offering alternative code approaches and improvements along the way. He has been responsive in integrating new features on time and implementing fixes to improve security, functionality, and usability. He has been able to adapt well in all situations and has been a great addition to our team.", "color" => "#b13cff"],
 
-                ["name" => "Katie", "title" => "Instructor", "company" => "WCTC", "quote" => "Austin has consistently demonstrated a commitment to delivering a high quality work product with his strong work ethic, attention to detail and problem-solving skills. Coupled with his ability to work as a team member, he goes above and beyond to contribute to the success of his classmates.", "color" => "#dd45d3"],
+                ["name" => "Katie Rozek", "title" => "Web Development Instructor", "company" => "WCTC", "quote" => "Austin has consistently demonstrated a commitment to delivering a high quality work product with his strong work ethic, attention to detail and problem-solving skills. Coupled with his ability to work as a team member, he goes above and beyond to contribute to the success of his classmates.", "color" => "#dd45d3"],
 
-                ["name" => "Tyler", "title" => "Instructor", "company" => "WCTC", "quote" => "Austin has consistently demonstrated a commitment to delivering a high quality work product with his strong work ethic, attention to detail and problem-solving skills. Coupled with his ability to work as a team member, he goes above and beyond to contribute to the success of his classmates.", "color" => "#fd9d52"],
+                ["name" => "Tyler Kowalchuk", "title" => "Web Development Instructor", "company" => "WCTC", "quote" => "I’ve had the pleasure of working with Austin for the past two years and he always exceeds my expectations with every project he works on. He is a quick learner and is open to trying new techniques and creative solutions. He truly understands the entire process from UI/UX to development and won’t stop until every detail is polished. Austin has a high attention to detail and continually strives to expand his skill set in both his designs and his code.", "color" => "#fd9d52"],
             ];
 
-            foreach($testimonials as $testimonial) { ?>
+            foreach ($testimonials as $testimonial) { ?>
                 <div class="ps-2 rounded ni" style="background:<?= $testimonial["color"] ?>">
                     <div class="testimonial mb-4 ni">
                         <blockquote class="mb-3 ps-0 pe-0 pe-md-3">
                             "<?= $testimonial["quote"] ?>"
                         </blockquote>
                         <p class="fw-500 mb-0"><?= $testimonial["name"] ?></p>
-                        <p class="text-muted mb-0"><?= $testimonial["title"] ?> @ <?= $testimonial["company"] ?></p>
+                        <p class="text-muted mb-0"><?= $testimonial["title"] ?>
+                            @ <?= $testimonial["company"] ?></p>
                     </div>
                 </div>
             <?php } ?>

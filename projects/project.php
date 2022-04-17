@@ -53,10 +53,35 @@ if (!$project) {
                     <a href="<?= $project["github"] ?>" target="_blank" class="button alt ms-0 me-1">
                         <i class="fab fa-github"></i></a>
                     <?php } ?>
-                    <?php if($project["url"] !== "") { ?>
-                    <a href="<?= $project["url"] ?>" target="_blank" class="submit-button alt ms-0">
+                    <?php if($project["url"] !== "" && $project["protected"]) { ?>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectAccess" class="button bg-white text-dark alt ms-0">
                         Visit project <i class="fas fa-arrow-up-right-from-square ms-2"></i>
                     </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="projectAccess">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="bg-gradient p-1 w-100 rounded">
+                                    <div class="modal-content bg-black py-4">
+                                        <div class="modal-body text-center">
+                                            <span class="fa-stack fa-2x mb-3">
+                                                <i class="fas fa-square fa-stack-2x"></i>
+                                                <i class="fas fa-key-skeleton text-dark fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <h3 class="mt-0">Project Access</h3>
+                                            <p class="mb-2"><strong>Email/Username:</strong> <code class="text-muted">demo@dudzik.dev</code></p>
+                                            <p><strong>Password:</strong> <code class="text-muted">passw0rd123</code></p>
+                                            <a href="<?= $project["url"] ?>" target="_blank" class="button bg-white text-dark">
+                                                Continue to project <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } elseif($project["url"] !== "") { ?>
+                        <a href="<?= $project["url"] ?>" target="_blank" class="button bg-white text-dark alt ms-0">
+                            Visit project <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                        </a>
                     <?php } ?>
                 </div>
 
@@ -71,7 +96,7 @@ if (!$project) {
                 <div class="row">
                     <?php foreach ($project["lang"] as $lang) {
                         echo '<div class="col-md-4 mb-2">
-                            <i class="fal fa-circle-small me-3"></i>' . $lang . '
+                            <i class="fal fa-asterisk me-2"></i>' . $lang . '
                             </div>';
                     } ?>
                 </div>
@@ -106,16 +131,18 @@ if (!$project) {
                 continue;
             }
             ?>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <a href="<?= $site_url . '/projects/' . $projects[$key]["slug"] ?>"
-                   class="card p-0">
+                   class="card p-0 h-100">
                     <img src="../assets/img/projects/<?= $projects[$key]["slug"] ?>/01.png"
                          class="img-fluid w-100 rounded-top"
                          alt="Cover of <?= $projects[$key]["name"] ?>">
+                    <div class="d-flex justify-content-center">
                     <img width="75" height="75"
                          src="../assets/img/projects/<?= $projects[$key]["slug"] ?>/icon.png"
-                         style="margin-top: -36px;margin-left: 34%;"
+                         style="margin-top: -36px"
                          alt="Icon of <?= $projects[$key]["name"] ?>">
+                    </div>
                     <div class="p-4 text-center pt-3">
                         <div class="title"><?= $projects[$key]["name"] ?></div>
                         <div class="subtitle text-muted"><?= $projects[$key]["short_desc"] ?>

@@ -1,9 +1,5 @@
 <?php
 
-// Define the site URL
-//$site_url = "http://localhost/orig/dudzik.dev";
-$site_url = "/orig/dudzik.dev";
-
 class Loader
 {
     public static function getHead(string $title = ""): string
@@ -164,8 +160,8 @@ class Loader
             <a href="' . $social["linkedin"] . '" target="_blank" class="text-white">
                 <i class="fab fa-linkedin me-3" style="font-size:20px"></i>
             </a>
-            <a href="' . $social["dribbble"] . '" target="_blank" class="text-white">
-                <i class="fab fa-dribbble" style="font-size:20px"></i>
+            <a href="' . $social["behance"] . '" target="_blank" class="text-white">
+                <i class="fab fa-behance" style="font-size:20px"></i>
             </a>
             </div>
             </div>

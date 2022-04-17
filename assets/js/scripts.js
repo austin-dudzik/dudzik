@@ -105,3 +105,19 @@ Fancybox.bind('[data-fancybox]', {
 $(".navbar-toggler").on("click", () => {
     $(".navbar").toggleClass("bg-dark");
 });
+
+$(document).ready(function(){
+    let scroll_start = 0;
+    let offset = $('#page').offset();
+    $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('#top-nav').css({
+                background: 'linear-gradient(180deg, #000000 0%, #00000050 50%, transparent 100%)',
+                transition: '.4s'
+                });
+        } else {
+            $('#top-nav').css('background', 'transparent');
+        }
+    });
+});

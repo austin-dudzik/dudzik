@@ -24,8 +24,8 @@
                 </a>
             </div>
             <div class="col-12 col-md mb-3 text-start text-md-center">
-                <a href="<?= $social["dribbble"] ?>" target="_blank">
-                    <i class="fab fa-dribbble me-2"></i> Dribbble
+                <a href="<?= $social["behance"] ?>" target="_blank">
+                    <i class="fab fa-behance me-2"></i> Behance
                 </a>
             </div>
             <div class="col-12 col-md-4 mb-3 text-start text-md-center">
