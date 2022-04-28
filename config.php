@@ -87,11 +87,19 @@ $projects = [
         "url" => "",
         "github" => "",
         "protected" => false,
-        "short_desc" => "Task management platform",
+        "short_desc" => "Customer toolbox tracking platform",
         "lang" => ['HTML', 'CSS', 'JavaScript', 'ASP.NET', 'C#', 'JSON', 'Oracle SQL', 'DBeaver', 'Confluence', 'Visual Studio', 'Mercurial', 'jQuery', 'Bootstrap'],
-        "description" => "TODO",
+        "description" => "During my time at Snap-on Incorporated, I was responsible for the development of a new web application, Coordinator, that allows franchisees to track products and toolboxes owned by customers on their routes, for later use during Snap-on promotional events and sales. The application gives franchisees an overview of each customer's profile and their currently owned products, with additional information including product colors, brand, purchase date, and model number. Coordinator is built using Bootstrap, JavaScript, C#, AJAX, and an API backend, allowing for a quick and responsive experience for franchisees.",
         "screenshots" => [
-
+            ['01', 'Shop and customer profile view'],
+            ['02', 'Customer products view'],
+            ['03', 'Type-specific products view'],
+            ['04', 'Brand selection view'],
+            ['05', 'Model number selection view'],
+            ['06', 'Product color selection view'],
+            ['07', 'Product trim color selection view'],
+            ['08', 'Product purchase date selection view'],
+            ['09', 'Edit customer attributes view']
         ],
     ],
     "dune" => [
@@ -214,7 +222,17 @@ $projects = [
         "lang" => ['WordPress', 'PHP', 'MySQL', 'Sass', 'Google Analytics', 'Event Espresso', 'AR Member'],
         "description" => "This project consists of a client website, designed and developed for Learning in Retirement of Waukesha County. LIRWC reached out in regard to development of a new site, including a membership system that would allow new users to join LIRWC online and allow existing members to sign up for courses and events hosted by the organization.<br><br>The project includes a large amount of custom development and was built using WordPress, with a custom Bootstrap theme. In order move a majority of LIRWC's member and course information over to an online format, an integration between the Event Espresso and AR Member plugins were established to manage member accounts and allow LIRWC to list course offerings that members can register for with their account. A variety of custom shortcodes and page templates were developed and integrated for greater flexibility using WordPress development best practices.<br><br>Besides custom WordPress development, this project also consisted of importing LIRWC's current database of ~500 members and potential members into the new site, along with current year courses and events. Domain transfers, hosting and SSL certificate setup, and the creation of new email inboxes were also completed as part of this development project.",
         "screenshots" => [
-
+            ['01', 'LIRWC homepage'],
+            ['02', 'All courses page'],
+            ['03', 'Single course page'],
+            ['04', 'All events page'],
+            ['05', 'All locations page'],
+            ['06', 'Single location page'],
+            ['07', 'Resources page'],
+            ['08', 'Course and event search page'],
+            ['09', 'Single category page'],
+            ['10', 'Single staff member page'],
+            ['11', 'Your Registrations page']
         ],
     ],
 ];
