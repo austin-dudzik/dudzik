@@ -40,7 +40,7 @@
 
                 <input type="hidden" name="_honey">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="http://localhost/orig/dudzik.dev/thanks">
+                <input type="hidden" name="_next" value="<?= $site_url ?>/thanks">
 
                 <button type="submit" class="btn-gradient w-100 ni py-2 submit-button text-white">
                     <i class="fas fa-paper-plane me-2"></i> Send message
